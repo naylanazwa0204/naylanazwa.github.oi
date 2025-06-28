@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasrengKita - Keripik Basreng Enak Pedas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Keripik Basreng Enak Pedas</h1>
+            <p class="subtitle">Rasa Pedas Gurih yang Bikin Nagih!</p>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-image">
+                     <img src="basrengkita.png" alt="Basreng Pedas Gurih BasrengKita">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">Basreng Pedas Gurih</h2>
+                    <p class="product-description">
+                        Keripik basreng pedas dengan rasa gurih dan renyah, cocok untuk camilan sehari-hari! 
+                        Dibuat dari bahan-bahan pilihan dengan bumbu rahasia yang bikin ketagihan. 
+                        Sensasi pedas yang pas di lidah dengan tekstur renyah yang sempurna.
+                    </p>
+                    <div class="product-price">Rp15.000 / 100gr</div>
+                    <button class="cta-button" onclick="handleOrder()">🌶️ Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Variants Section -->
+    <section class="variants-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Varian Lainnya</h2>
+            
+            <div class="variants-grid">
+                <!-- Original Variant -->
+                <div class="variant-card variant-original fade-in">
+                    <div class="variant-image">
+                         <img src="basreng-original.png" alt="Basreng Original" loading="lazy">
+                    </div>
+                    <div class="variant-content">
+                        <h3 class="variant-title">Basreng Original</h3>
+                        <span class="variant-flavor">Rasa Asli</span>
+                        <p class="variant-description">
+                            Basreng dengan rasa original yang gurih dan renyah. 
+                            Tanpa tambahan bumbu pedas, cocok untuk semua kalangan 
+                            yang menyukai rasa asli dari keripik basreng.
+                        </p>
+                        <div class="variant-price">Rp13.000 / 100gr</div>
+                        <button class="variant-button" onclick="handleOrderVariant('Original')">
+                            Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Cheese Variant -->
+                <div class="variant-card variant-cheese fade-in">
+                    <div class="variant-image">
+                         <img src="basreng-keju.png" alt="Basreng Keju" loading="lazy">
+                    </div>
+                    <div class="variant-content">
+                        <h3 class="variant-title">Basreng Keju</h3>
+                        <span class="variant-flavor">Gurih Keju</span>
+                        <p class="variant-description">
+                            Kombinasi sempurna antara keripik basreng dengan keju. 
+                            Rasa gurih keju yang melimpah di setiap gigitan. 
+                            Cocok untuk pecinta keju dan camilan gurih.
+                        </p>
+                        <div class="variant-price">Rp16.000 / 100gr</div>
+                        <a href="https://wa.me/6283135571641?text=Halo%20saya%20ingin%20pesan%20Basreng%20varian%20Keju" 
+   class="variant-button" 
+   style="text-decoration: none;" 
+   target="_blank">
+   Pesan Sekarang
+</a>
+                    </div>
+                </div>
+                
+                <!-- Lime Leaf Variant -->
+                <div class="variant-card variant-limeleaf fade-in">
+                    <div class="variant-image">
+                        <img src="basreng-daunjeruk.png" alt="Basreng Pedas Daun Jeruk" loading="lazy">
+                    </div>
+                    <div class="variant-content">
+                        <h3 class="variant-title">Basreng Pedas Daun Jeruk</h3>
+                        <span class="variant-flavor">Pedas & Aroma Khas</span>
+                        <p class="variant-description">
+                            Sensasi pedas yang menggigit dengan aroma daun jeruk yang khas. 
+                            Kombinasi sempurna yang membuat ketagihan. 
+                            Untuk yang suka pedas dengan sentuhan segar.
+                        </p>
+                        <div class="variant-price">Rp15.000 / 100gr</div>
+                        <button class="variant-button" onclick="handleOrderVariant('Pedas Daun Jeruk')">
+                            Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Contact Section -->
+    <section class="contact-section">
+        <div class="contact-pattern"></div>
+        <div class="contact-container">
+            <h2 class="contact-title">Pesan Langsung via WhatsApp</h2>
+            <p class="contact-subtitle">
+                Untuk pemesanan atau informasi lebih lanjut, silakan hubungi kami melalui WhatsApp. 
+                Tim kami siap melayani Anda dengan ramah dan cepat.
+            </p>
+            
+            <a href="https://wa.me/6283135571641" class="whatsapp-button" target="_blank">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+            
+            <span class="whatsapp-number">+62 831-3557-1641</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <p style="margin-top: 10px;">Atau bisa kunjungi Instagram kami dengan klik logo dibawah :</p>
+    <a href="https://www.instagram.com/basregkita_?igsh=MXZxdGE0eXVjbTZpbw==" target="_blank" style="
+        color: #E1306C;
+        font-size: 24px;
+        border: 2px solid #E1306C;
+        padding: 10px 16px;
+        border-radius: 8px;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 5px;
+        transition: all 0.3s ease;
+    ">
+        <i class="fab fa-instagram"></i>
+    </a>
+</footer>
+
+
+</footer>
+
+    <footer class="footer">
+        <p>&copy; 2025 BasrengKita. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
